@@ -11,7 +11,7 @@ class LoginPage extends Component {
     fontWeight: "regular",
     fontFamily: "montserrat",
     textAlign: "center",
-    paddingTop: 25,
+    paddingTop: 80,
   };
 
   render() {
@@ -28,6 +28,19 @@ class LoginPage extends Component {
             Log into your account
           </div>
           <Login />
+          <div
+            class="text-center text-secondary"
+            style={{
+              fontFamily: "montserrat",
+              fontStyle: "normal",
+              fontWeight: "bold",
+              fontSize: 25,
+              textAlign: "center",
+              paddingTop: 20,
+            }}
+          >
+            Forgot your password? Click here
+          </div>
         </body>
       </div>
     );
@@ -41,14 +54,14 @@ function DisplayLogo() {
       className="Login-logo"
       alt="logo"
       class="rounded mx-auto d-block"
-      style={{ paddingTop: 50 }}
+      style={{ paddingTop: 70, alignContent: "center" }}
     />
   );
 }
 
 function Login() {
   return (
-    <div className="LoginContainer">
+    <div className="loginContainer">
       <div className="loginInner">
         <LoginForm />
       </div>
