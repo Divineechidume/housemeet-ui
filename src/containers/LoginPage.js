@@ -3,14 +3,15 @@ import { Helmet } from "react-helmet";
 import logo from "../images/housemeet-logo.svg";
 import LoginForm from "../components/LoginForm";
 import "bootstrap/dist/css/bootstrap.css";
+import "typeface-montserrat";
 
 class LoginPage extends Component {
   styles = {
     fontSize: 30,
     fontWeight: "regular",
-    fontFamily: "Montserrat",
+    fontFamily: "montserrat",
     textAlign: "center",
-    paddingTop: 20,
+    paddingTop: 25,
   };
 
   render() {
