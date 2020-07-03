@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import logo from "../images/housemeet-logo.svg";
 import LoginForm from "../components/LoginForm";
@@ -23,25 +24,25 @@ class LoginPage extends Component {
         <header className="Login-header">
           <DisplayLogo />
         </header>
-        <body>
-          <div class="text-center text-secondary" style={this.styles}>
-            Log into your account
-          </div>
-          <Login />
-          <div
-            class="text-center text-secondary"
+
+        <div class="text-center text-secondary" style={this.styles}>
+          Log into your account
+        </div>
+        <Login />
+        <div class="text-center text-secondary" style={{ paddingTop: 30 }}>
+          <span
             style={{
               fontFamily: "montserrat",
               fontStyle: "normal",
               fontWeight: "bold",
               fontSize: 25,
               textAlign: "center",
-              paddingTop: 20,
             }}
           >
-            Forgot your password? Click here
-          </div>
-        </body>
+            Forgot your password? &nbsp;
+            <Link to="/password_recovery">Click here!</Link>
+          </span>
+        </div>
       </div>
     );
   }
