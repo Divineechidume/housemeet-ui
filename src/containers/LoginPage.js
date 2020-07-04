@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import logo from "../images/housemeet-logo.svg";
 import LoginForm from "../components/LoginForm";
 import "bootstrap/dist/css/bootstrap.css";
@@ -18,9 +17,6 @@ class LoginPage extends Component {
   render() {
     return (
       <div className="Login">
-        <Helmet>
-          <title>housemeet</title>
-        </Helmet>
         <header className="Login-header">
           <DisplayLogo />
         </header>

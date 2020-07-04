@@ -6,6 +6,7 @@ import lower_rect from "../images/homePage/Lower-left-rectangle.svg";
 import logo from "../images/homePage/logo.svg";
 import people from "../images/homePage/house-mates.png";
 import cross from "../images/homePage/cross.svg";
+import { Helmet } from "react-helmet";
 import "./HomePage.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "typeface-montserrat";
@@ -24,6 +25,11 @@ class HomePage extends Component {
   render() {
     return (
       <div>
+        <header>
+          <Helmet>
+            <title>housemeet</title>
+          </Helmet>
+        </header>
         <Crosses />
         <Circles />
         <Rectangles />
