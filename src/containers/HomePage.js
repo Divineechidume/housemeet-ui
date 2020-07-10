@@ -7,6 +7,7 @@ import logo from "../images/homePage/logo.svg";
 import people from "../images/homePage/house-mates.png";
 import cross from "../images/homePage/cross.svg";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import "./HomePage.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "typeface-montserrat";
@@ -66,6 +67,26 @@ class HomePage extends Component {
             style={{ left: 963, top: 566, position: "absolute" }}
           >
             <div className="col-lg">
+              <Link to="login">
+                <button
+                  type="button"
+                  className="btn button"
+                  style={{
+                    fontFamily: "montserrat",
+                    fontStyle: "normal",
+                    fontWeight: "bold",
+                    fontSize: 25,
+                    textAlign: "center",
+                    backgroundColor: "#F1955A",
+                    borderRadius: 30,
+                    marginRight: 100,
+                  }}
+                >
+                  Login
+                </button>
+              </Link>
+            </div>
+            <Link to="/signup">
               <button
                 type="button"
                 className="btn button"
@@ -75,31 +96,14 @@ class HomePage extends Component {
                   fontWeight: "bold",
                   fontSize: 25,
                   textAlign: "center",
-                  backgroundColor: "#F1955A",
+                  backgroundColor: "#5EB4CA",
                   borderRadius: 30,
-                  marginRight: 100,
+                  marginLeft: 100,
                 }}
               >
-                Login
+                Sign Up
               </button>
-            </div>
-
-            <button
-              type="button"
-              className="btn button"
-              style={{
-                fontFamily: "montserrat",
-                fontStyle: "normal",
-                fontWeight: "bold",
-                fontSize: 25,
-                textAlign: "center",
-                backgroundColor: "#5EB4CA",
-                borderRadius: 30,
-                marginLeft: 100,
-              }}
-            >
-              Sign Up
-            </button>
+            </Link>
           </div>
         </div>
       </div>
